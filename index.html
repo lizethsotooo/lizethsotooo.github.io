@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lizeth Ximena Soto Ortega</title>
+  <style>
+    :root {
+      --bg: #f4faf5;
+      --card: #ffffff;
+      --green: #cfe8d5;
+      --green-dark: #7fb98f;
+      --yellow: #fff3b8;
+      --wine: #722f37;
+      --text: #3b2a2d;
+      --muted: #6b5a5d;
+      --shadow: 0 8px 24px rgba(114, 47, 55, 0.10);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      background: linear-gradient(135deg, var(--green), var(--yellow));
+      color: var(--wine);
+      text-align: center;
+      padding: 4rem 1.25rem 3.5rem;
+    }
+    .avatar {
+      width: 88px; height: 88px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      background: var(--wine);
+      color: var(--yellow);
+      border: 3px solid #fff;
+      display: grid; place-items: center;
+      font-size: 2rem; font-weight: 700;
+    }
+    header h1 { font-size: clamp(1.6rem, 6vw, 2.6rem); line-height: 1.2; }
+    header p { margin-top: 0.5rem; font-size: clamp(0.95rem, 3.5vw, 1.1rem); }
+    main {
+      max-width: 760px;
+      margin: -2rem auto 0;
+      padding: 0 1rem 3rem;
+      display: grid;
+      gap: 1.25rem;
+    }
+    section {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+      border-top: 5px solid var(--green);
+    }
+    section:nth-child(even) { border-top-color: var(--yellow); }
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--wine);
+    }
+    p { color: var(--muted); }
+    p + p { margin-top: 0.8rem; }
+    ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .intereses li {
+      background: var(--yellow);
+      color: var(--wine);
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .aprender { display: grid; gap: 0.6rem; }
+    .aprender li {
+      color: var(--muted);
+      padding-left: 1.6rem;
+      position: relative;
+    }
+    .aprender li::before {
+      content: "→";
+      position: absolute; left: 0;
+      color: var(--green-dark);
+      font-weight: 700;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 0.25rem;
+      background: var(--wine);
+      color: var(--yellow);
+      text-decoration: none;
+      padding: 0.75rem 1.4rem;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: transform 0.15s, opacity 0.15s;
+    }
+    .btn:hover { transform: translateY(-2px); opacity: 0.92; }
+    footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 0 1rem 2rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="avatar" aria-hidden="true">LS</div>
+    <h1>Lizeth Ximena Soto Ortega</h1>
+    <p>Ingeniería en Sistemas Computacionales · Universidad La Salle Chihuahua</p>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy Lizeth, estudiante de primer semestre de Ingeniería en Sistemas
+        Computacionales en la Universidad La Salle Chihuahua. Estoy dando mis primeros
+        pasos en el mundo de la tecnología y me emociona descubrir cómo se construyen
+        las aplicaciones y los sistemas que usamos todos los días.
+      </p>
+      <p>
+        Juego tochito, me gusta leer libros y ver películas y series. También me
+        gusta la moda, personalizar mis cosas y hacer que se sientan mías. Disfruto
+        pensar en crear cosas o en buscarle una solución a algo, y considero que doy
+        buenos consejos. Me apasiona lo que la carrera me puede enseñar, y espero
+        aprovechar mi estancia en la universidad lo más que pueda y conocer a mucha
+        gente bonita.
+      </p>
+    </section>
+
+    <section id="intereses">
+      <h2>Mis intereses</h2>
+      <ul class="intereses">
+        <li>Programación</li>
+        <li>Tecnología</li>
+        <li>Sustentabilidad</li>
+        <li>Resolver problemas</li>
+        <li>Aprender cosas nuevas</li>
+      </ul>
+    </section>
+
+    <section id="aprender">
+      <h2>Lo que quiero aprender</h2>
+      <ul class="aprender">
+        <li>Aprender bien Python</li>
+        <li>HTML, JS y CSS</li>
+        <li>Bases de datos</li>
+        <li>Usar Git y GitHub</li>
+      </ul>
+    </section>
+
+    <section id="github">
+      <h2>Mi GitHub</h2>
+      <p>Aquí iré subiendo mis proyectos y avances.</p>
+      <br>
+      <a class="btn" href="https://github.com/lizethsotooo" target="_blank" rel="noopener">
+        Ver mi perfil de GitHub
+      </a>
+    </section>
+  </main>
+
+  <footer>© 2026 Lizeth Ximena Soto Ortega</footer>
+
+</body>
+</html>
